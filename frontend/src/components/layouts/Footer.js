@@ -1,8 +1,12 @@
 export  default function Footer (){
+
+    const date = new Date();
+    const year = date.getFullYear();
+
     return (
         <footer className="py-1">
             <p className="text-center text-dark mt-1">
-                JVLcart - 2022-2023, All Rights Reserved
+                Ecom Shop - {year}, All Rights Reserved
             </p>
         </footer>
     )
