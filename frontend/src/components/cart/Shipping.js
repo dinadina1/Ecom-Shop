@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import CheckoutSteps from "./CheckoutStep";
 import { toast } from "react-toastify";
 
-export const validateShipping = (shippingInfo, navigate) => {
+export const validateShipping = (shippingInfo, navigate, toast) => {
    
     if(
         !shippingInfo.address||
@@ -17,7 +17,7 @@ export const validateShipping = (shippingInfo, navigate) => {
         !shippingInfo.postalCode
         ) {
             toast.error('Please fill the shipping information',{position: toast.POSITION.BOTTOM_CENTER})
-            navigate('/shipping')
+            return navigate('/shipping')
     }
 } 
 

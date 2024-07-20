@@ -4,6 +4,7 @@ import { validateShipping } from './Shipping';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import CheckoutSteps from './CheckoutStep';
+import { toast } from 'react-toastify';
 
 export default function ConfirmOrder () {
     const { shippingInfo, items:cartItems } = useSelector(state => state.cartState);
@@ -28,7 +29,7 @@ export default function ConfirmOrder () {
 
 
     useEffect(()=>{
-        validateShipping(shippingInfo, navigate)
+        validateShipping(shippingInfo, navigate, toast)
     },[])
 
     return (
@@ -46,8 +47,8 @@ export default function ConfirmOrder () {
                 <hr />
                 <h4 className="mt-4">Your Cart Items:</h4>
 
-                    {cartItems.map(item => (
-                            <Fragment>
+                    {cartItems.map((item, index) => (
+                            <Fragment key={index}>
                                 <div className="cart-item my-1">
                                     <div className="row">
                                         <div className="col-4 col-lg-2">

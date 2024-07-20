@@ -10,7 +10,8 @@ const orderSlice = createSlice({
         adminOrders: [],
         loading: false,
         isOrderDeleted: false,
-        isOrderUpdated: false
+        isOrderUpdated: false,
+        error: null
     },
     reducers: {
         createOrderRequest(state, action) {

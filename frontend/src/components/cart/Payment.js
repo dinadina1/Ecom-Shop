@@ -16,12 +16,13 @@ export default function Payment() {
     const dispatch = useDispatch()
     const navigate = useNavigate();
     const orderInfo = JSON.parse(sessionStorage.getItem('orderInfo'))
+
     const { user } = useSelector(state => state.authState)
     const {items:cartItems, shippingInfo } = useSelector(state => state.cartState)
     const { error:orderError } = useSelector(state => state.orderState)
 
     const paymentData = {
-        amount : Math.round( orderInfo.totalPrice * 100),
+        amount : orderInfo ? Math.round( orderInfo.totalPrice * 100) : 0,
         shipping :{
             name: user.name,
             address:{
@@ -44,21 +45,18 @@ export default function Payment() {
         order.itemsPrice = orderInfo.itemsPrice
         order.shippingPrice = orderInfo.shippingPrice
         order.taxPrice = orderInfo.taxPrice
-        order.totalPrice = orderInfo.totalPrice
-        
+        order.totalPrice = orderInfo.totalPrice     
     }
 
     useEffect(() => {
-        validateShipping(shippingInfo, navigate)
+        validateShipping(shippingInfo, navigate, toast)
         if(orderError) {
             toast(orderError, {
                 position: toast.POSITION.BOTTOM_CENTER,
                 type: 'error',
-                onOpen: ()=> { dispatch(clearOrderError()) }
+                onOpen: ()=> dispatch(clearOrderError()) 
             })
-            return
         }
-
     },[])
 
     const submitHandler = async (e) => {
@@ -153,7 +151,7 @@ export default function Payment() {
                     type="submit"
                     className="btn btn-block py-3"
                     >
-                    Pay - { ` $${orderInfo && orderInfo.totalPrice}` }
+                    Pay - ${orderInfo && orderInfo.totalPrice}
                     </button>
         
                 </form>
