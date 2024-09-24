@@ -19,7 +19,7 @@ const sendEmail = async (options) => {
         subject: options.subject,
         text: options.message
     }
-
+ 
    await transporter.sendMail(message)
 }
 

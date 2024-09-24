@@ -27,7 +27,7 @@ const orderSchema = mongoose.Schema({
         type: mongoose.SchemaTypes.ObjectId,
         required: true,
         ref: 'User'
-    },
+    }, 
     orderItems: [{
         name: {
             type: String,

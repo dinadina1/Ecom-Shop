@@ -9,7 +9,7 @@ module.exports = (err, req, res, next) =>{
             stack: err.stack,
             error: err
         })
-    }
+    } 
 
     if(process.env.NODE_ENV == 'production'){
         let message = err.message;

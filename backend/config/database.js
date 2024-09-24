@@ -29,7 +29,7 @@ const getParameter = async (parameterName) => {
 // function to connect to the database
 const connectDatabase = async () => {
   let mongoUri;
-
+ 
   try {
     if (process.env.NODE_ENV === "production") {
       // Retrieve MONGO_URI from AWS SSM if in production

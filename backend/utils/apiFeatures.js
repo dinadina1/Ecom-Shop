@@ -15,7 +15,7 @@ class APIFeatures {
        this.query.find({...keyword})
        return this;
     }
-
+ 
 
     filter(){
         const queryStrCopy = { ...this.queryStr };

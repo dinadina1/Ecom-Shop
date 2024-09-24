@@ -28,7 +28,7 @@ exports.registerUser = catchAsyncError(async (req, res, next) => {
     });
 
     sendToken(user, 201, res)
-
+ 
 })
 
 //Login User - /api/v1/login

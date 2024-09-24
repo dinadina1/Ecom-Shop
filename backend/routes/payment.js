@@ -7,4 +7,4 @@ router.route('/payment/process').post( isAuthenticatedUser, processPayment);
 router.route('/stripeapi').get( isAuthenticatedUser, sendStripeApi);
 
 
-module.exports = router;
+module.exports = router; 

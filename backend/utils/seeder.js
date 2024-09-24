@@ -17,5 +17,5 @@ const seedProducts = async ()=>{
     }
     process.exit();
 }
-
+ 
 seedProducts();
