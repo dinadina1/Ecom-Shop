@@ -25,7 +25,7 @@ export default function UpdateUser () {
         formData.append('email' , email);
         formData.append('role' , role);
         dispatch(updateUser(userId, formData))
-    }
+    };
 
     useEffect(() => {
         if(isUserUpdated) {

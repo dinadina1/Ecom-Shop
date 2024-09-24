@@ -26,7 +26,7 @@ export default function Dashboard () {
         adminOrders.forEach( order => {
             totalAmount += order.totalPrice
         })
-    }
+    };
 
 
 

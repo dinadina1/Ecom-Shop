@@ -7,7 +7,7 @@ export default function Sidebar () {
 
     return (
         <div className="sidebar-wrapper">
-            <nav id="sidebar">
+            <nav id="sidebar"> 
                 <ul className="list-unstyled components">
                 <li>
                     <Link to="/admin/dashboard"><i className="fas fa-tachometer-alt"></i> Dashboard</Link>

@@ -38,9 +38,7 @@ export  default function ProductSearch(){
     ];
  
     const setCurrentPageNo = (pageNo) =>{
-
         setCurrentPage(pageNo)
-       
     }
 
     useEffect(()=>{

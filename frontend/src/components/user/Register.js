@@ -11,7 +11,7 @@ export default function Register() {
     name: "",
     email: "",
     password: "",
-  });
+  }); 
   const [avatar, setAvatar] = useState("");
   const [avatarPreview, setAvatarPreview] = useState(
     "/images/default_avatar.png"

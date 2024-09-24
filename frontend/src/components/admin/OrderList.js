@@ -44,7 +44,7 @@ export default function OrderList() {
                 }
             ],
             rows : []
-        }
+        };
 
         adminOrders.forEach( order => {
             data.rows.push({

@@ -25,7 +25,7 @@ export default function ConfirmOrder () {
         }
         sessionStorage.setItem('orderInfo', JSON.stringify(data))
         navigate('/payment')
-    }
+    };
 
 
     useEffect(()=>{

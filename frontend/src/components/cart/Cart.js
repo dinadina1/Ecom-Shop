@@ -6,7 +6,7 @@ import { decreaseCartItemQty, increaseCartItemQty,removeItemFromCart } from '../
 export default function Cart() {
     const {items } = useSelector(state => state.cartState)
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
     const increaseQty = (item) => {
         const count = item.quantity;

@@ -19,7 +19,7 @@ export const validateShipping = (shippingInfo, navigate, toast) => {
             toast.error('Please fill the shipping information',{position: toast.POSITION.BOTTOM_CENTER})
             return navigate('/shipping')
     }
-} 
+};
 
 
 export default function Shipping() {

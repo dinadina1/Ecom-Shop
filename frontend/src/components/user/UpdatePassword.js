@@ -11,7 +11,7 @@ export default function UpdatePassword() {
     const { isUpdated, error } = useSelector(state => state.authState)
 
     const submitHandler = (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
         const formData = new FormData();
         formData.append('oldPassword', oldPassword);
         formData.append('password', password);

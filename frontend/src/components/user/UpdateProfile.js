@@ -14,16 +14,14 @@ export default function UpdateProfile () {
 
     const onChangeAvatar = (e) => {
         const reader = new FileReader();
-        reader.onload = () => {
+        reader.onload = () => { 
              if(reader.readyState === 2) {
                  setAvatarPreview(reader.result);
                  setAvatar(e.target.files[0])
              }
         }
-
-
         reader.readAsDataURL(e.target.files[0])
-    }
+    };
 
     const submitHandler  = (e) =>{
         e.preventDefault();

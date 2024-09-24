@@ -36,7 +36,7 @@ export default function Header () {
               <Dropdown className='d-inline' >
                   <Dropdown.Toggle variant='default text-white pr-5' id='dropdown-basic'>
                     <figure className='avatar avatar-nav'>
-                      <Image width="50px" src={user.avatar??'./images/default_avatar.png'}  />
+                      <Image width="80px" src={user.avatar??'./images/default_avatar.png'}  style={{borderRadius:"50%"}}/>
                     </figure>
                     <span>{user.name}</span>
                   </Dropdown.Toggle>

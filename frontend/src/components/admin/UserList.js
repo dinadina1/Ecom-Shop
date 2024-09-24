@@ -44,7 +44,7 @@ export default function UserList() {
                 }
             ],
             rows : []
-        }
+        };
 
         users.forEach( user => {
             data.rows.push({

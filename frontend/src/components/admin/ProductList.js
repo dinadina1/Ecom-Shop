@@ -44,7 +44,7 @@ export default function ProductList() {
                 }
             ],
             rows : []
-        }
+        };
 
         products.forEach( product => {
             data.rows.push({

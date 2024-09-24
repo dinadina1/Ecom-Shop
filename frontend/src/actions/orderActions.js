@@ -57,4 +57,4 @@ export const updateOrder = (id, orderData)  => async(dispatch) => {
     } catch (error) {
        dispatch(updateOrderFail(error.response.data.message))
     }
-}
+};

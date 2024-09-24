@@ -18,4 +18,4 @@ export default function ProductReview({reviews}) {
            
         </div>
     )
-}
+};

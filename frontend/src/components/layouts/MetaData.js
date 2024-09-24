@@ -6,4 +6,4 @@ export default function MetaData({title}) {
             <title>{`${title} - Ecom Shop`}</title>
         </Helmet>
     )
-}
+};

@@ -8,7 +8,6 @@ export default function OrderSuccess() {
 
                 <a href="/orders">Go to Orders</a>
             </div>
-
         </div>
     )
 }

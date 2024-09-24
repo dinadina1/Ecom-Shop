@@ -11,7 +11,7 @@ export default function OrderDetail () {
     const {id } = useParams();
 
     useEffect(() => {
-        dispatch(orderDetailAction(id))
+        dispatch(orderDetailAction(id));
     },[id])
 
     return (

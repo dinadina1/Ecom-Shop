@@ -13,7 +13,7 @@ export default function ForgotPassword() {
         const formData = new FormData();
         formData.append('email', email);
         dispatch(forgotPassword(formData))
-    }
+    };
 
     useEffect(()=>{
         if(message) {

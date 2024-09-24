@@ -54,8 +54,7 @@ export  default function NewProduct () {
 
 
         })
-
-    }
+    };
 
     const submitHandler = (e) => {
         e.preventDefault();

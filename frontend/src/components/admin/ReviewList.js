@@ -43,7 +43,7 @@ export default function ReviewList() {
                 }
             ],
             rows : []
-        }
+        };
 
         reviews.forEach( review => {
             data.rows.push({

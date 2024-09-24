@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 
 export default function UpdateOrder () {
     
-    
     const { loading, isOrderUpdated, error, orderDetail } = useSelector( state => state.orderState)
     const { user = {}, orderItems = [], shippingInfo = {}, totalPrice = 0, paymentInfo = {}} = orderDetail;
     const isPaid = paymentInfo.status === 'succeeded'? true: false;

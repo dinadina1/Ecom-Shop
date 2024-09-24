@@ -36,7 +36,7 @@ export default function Login() {
   useEffect(() => {
     if (isAuthenticated) {
       navigate(redirect);
-    }
+    };
 
     if (error) {
       toast(error, {

@@ -50,7 +50,7 @@ export default function UpdateProduct () {
                     setImagesPreview(oldArray => [...oldArray, reader.result])
                     setImages(oldArray => [...oldArray, file])
                 }
-            }
+            };
 
             reader.readAsDataURL(file)
 

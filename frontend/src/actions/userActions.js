@@ -88,7 +88,7 @@ export const loadUser =  async (dispatch) => {
         dispatch(loadUserFail(error.response.data.message))
     }
 
-}
+};
 
 export const logout =  async (dispatch) => {
 

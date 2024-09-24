@@ -139,4 +139,4 @@ export const deleteReview =  (productId, id) => async (dispatch) => {
         dispatch(deleteReviewFail(error.response.data.message))
     }
     
-}
+};

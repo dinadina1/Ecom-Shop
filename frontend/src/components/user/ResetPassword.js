@@ -11,7 +11,7 @@ export default function ResetPassword() {
     const { isAuthenticated, error }  = useSelector(state => state.authState)
     const navigate = useNavigate();
     const { token } = useParams();
-
+ 
     const submitHandler  = (e) => {
         e.preventDefault();
         const formData = new FormData();
