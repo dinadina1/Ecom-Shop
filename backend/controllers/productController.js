@@ -11,7 +11,7 @@ exports.getProducts = catchAsyncError(async (req, res, next)=>{
         return new APIFeatures(Product.find(), req.query).search().filter()
     }
     
-    const filteredProductsCount = await buildQuery().query.countDocuments({})
+    const filteredProductsCount = await buildQuery().query.countDocuments({});
     const totalProductsCount = await Product.countDocuments({});
     let productsCount = totalProductsCount;
 

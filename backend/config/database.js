@@ -31,7 +31,7 @@ const connectDatabase = async () => {
   let mongoUri;
  
   try {
-    if (process.env.NODE_ENV === "production") {
+    if (process.env.NODE_ENV !== "production") {
       // Retrieve MONGO_URI from AWS SSM if in production
       mongoUri = await getParameter("MONGO_URI");
     } else {

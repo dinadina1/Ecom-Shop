@@ -9,8 +9,11 @@ export default function Search () {
 
     const searchHandler = (e) => {
         e.preventDefault();
-        navigate(`/search/${keyword}`)
-
+        if(keyword){
+            navigate(`/search/${keyword}`);
+        } else {
+            navigate('/');
+        }
     }
 
     const clearKeyword = () =>{
@@ -20,7 +23,7 @@ export default function Search () {
     useEffect(() => {
         if(location.pathname === '/') {
             clearKeyword();
-        }
+        };
     },[location])
 
     return (
