@@ -21,7 +21,7 @@ export default function Header () {
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
             <Link to="/">
-              <img width="150px" alt='JVLcart Logo' src="/images/logo.png" style={{height:"50px"}}/>
+              <img width="150px" alt='ecomshop Logo' src="/images/logo.png" style={{height:"50px"}}/>
             </Link>
             </div>
         </div>
