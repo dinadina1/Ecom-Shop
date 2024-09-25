@@ -1,6 +1,6 @@
 # Ecom Shop
 
-an E-commerce Website built with MERN stack.
+The eComShop website is an online shopping platform built using the MERN stack. It offers users a seamless experience with features like product and category search, a shopping cart, and secure payments through the Stripe payment gateway. Shoppers can filter products by category, price, and ratings to find exactly what they need. The admin panel allows for efficient management of products, orders, and users, providing full control over the e-commerce operations.
 
 ## Deployed URL:
 http://3.87.50.31/
